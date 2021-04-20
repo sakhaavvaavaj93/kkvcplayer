@@ -160,7 +160,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             lel.edit(
-                "Song not found\n\n\മനസ്സിലാവുന്ന ഭാഷ പറ." print(str(e))
+                "Song not found" print(str(e))
             return
 
         keyboard = InlineKeyboardMarkup(
