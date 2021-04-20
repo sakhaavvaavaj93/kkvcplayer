@@ -64,7 +64,7 @@ async def skip(client: Client, message: Message):
         tgcalls.pytgcalls.leave_group_call(chat_id)
     else:
         tgcalls.pytgcalls.change_stream(
-            chat_id, sira.get(chat_id)["file_path"]
+            chat_id, kkmusic.get(chat_id)["file_path"]
         )
 
     await message.reply_text("ചെല്ലം ചാടി നടക്കണ പുൽ ചാടി.")
