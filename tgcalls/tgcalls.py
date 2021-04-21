@@ -20,11 +20,5 @@ def on_stream_end(chat_id: int) -> None:
             chat_id, kkmusic.get(chat_id)["file_path"]
 
         )
-@pytgcalls.on_stream_join()
-def on_stream_join(chat_id: int) -> None:
-    kkmusic.task_done(chat_id)
 
-    if kkmusic.is_empty(chat_id):
-        pytgcalls.join_group_call(chat_id)
-       )
 run = pytgcalls.run
